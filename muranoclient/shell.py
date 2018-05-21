@@ -100,18 +100,6 @@ class MuranoShell(object):
 
         # os-cert, os-key, insecure, ca-file are all added
         # by keystone session register_cli_opts later
-        parser.add_argument('--cert-file',
-                            dest='os_cert',
-                            help='DEPRECATED! Use --os-cert.')
-
-        parser.add_argument('--key-file',
-                            dest='os_key',
-                            help='DEPRECATED! Use --os-key.')
-
-        parser.add_argument('--ca-file',
-                            dest='os_cacert',
-                            help='DEPRECATED! Use --os-cacert.')
-
         parser.add_argument('--api-timeout',
                             help='Number of seconds to wait for an '
                                  'API response, '
